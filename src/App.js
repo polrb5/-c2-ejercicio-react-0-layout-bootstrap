@@ -38,18 +38,17 @@ function App() {
             <section className="listado">
               <h3>{categoriasTitulo}</h3>
               <ul className="list-unstyled">
-                <li>{categorias[0]}</li>
-                <li>{categorias[1]}</li>
-                <li>{categorias[2]}</li>
-                <li>{categorias[3]}</li>
+                {categorias.map((categorias) => (
+                  <li>{categorias}</li>
+                ))}
               </ul>
             </section>
             <section className="listado">
               <h3>{otrasCosasTitulo}</h3>
               <ul className="list-unstyled">
-                <li>{otrasCosas[0]}</li>
-                <li>{otrasCosas[1]}</li>
-                <li>{otrasCosas[2]}</li>
+                {otrasCosas.map((otrasCosas) => (
+                  <li>{otrasCosas}</li>
+                ))}
               </ul>
             </section>
           </aside>
